@@ -48,7 +48,7 @@ def look_at_replies():
         command = comment.body.strip().lower()
         if command == "stop":
             blacklist.append(comment.author.name)
-            commanet.reply("You have been blacklisted!")
+            comment.reply("You have been blacklisted!")
             print("User Blacklisted")
             r.message.mark_as_read()
         except:
